@@ -1,0 +1,99 @@
+h2{
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
+
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+a{
+  text-decoration: dotted;
+  color: black;
+}
+a:hover{
+  color: rgb(84, 142, 193);
+}
+/* Center the page content */
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Center the header content */
+header {
+  text-align: center;
+}
+
+/* Center the main content */
+main {
+  text-align: center;
+}
+
+/* Style the projects container */
+#projects-div {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px; /* Add some space between projects */
+}
+
+.project{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  min-width: 200px; /* Give it a minimum width */
+  min-height: 150px; /* Give it a minimum height */
+}
+
+.project img{
+  position: absolute;
+  object-fit: cover; 
+  z-index: -1; 
+  width: 100px;
+  height: 100px;
+  /* Center the image using these properties */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Ensure text content stays visible */
+.project p,
+.project ul {
+  position: relative;
+  z-index: 1;
+  margin: 5px 0;
+}
+
+#project1 {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 50%;
+  background-color: rgba(232, 244, 253, 0.4); /* Semi-transparent so image shows through */
+}
+
+#project2 {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 50%;
+  background-color: rgba(240, 248, 232, 0.4);
+}
+
+#project3 {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 50%;
+  background-color: rgba(253, 242, 232, 0.4);
+}
+
+ul{
+  list-style-type: none;
+  padding: 0; /* Remove default padding */
+}
